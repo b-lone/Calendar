@@ -3,8 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,19 +19,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-E1-HbO">
-                    <rect key="frame" x="191" y="52" width="32" height="21"/>
+                    <rect key="frame" x="191" y="8" width="32" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q00-Ex-zPp" userLabel="2022">
-                    <rect key="frame" x="239" y="52" width="40" height="21"/>
+                    <rect key="frame" x="239" y="8" width="40" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kbl-pM-3db">
-                    <rect key="frame" x="0.0" y="81" width="414" height="773"/>
+                    <rect key="frame" x="0.0" y="37" width="414" height="859"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fpu-Me-8Co">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -46,24 +44,17 @@
                     </connections>
                 </collectionView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Q00-Ex-zPp" firstAttribute="leading" secondItem="VOO-E1-HbO" secondAttribute="trailing" constant="16" id="45Z-i3-5Hm"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kbl-pM-3db" secondAttribute="trailing" id="BEA-po-6g8"/>
+                <constraint firstAttribute="trailing" secondItem="kbl-pM-3db" secondAttribute="trailing" id="BEA-po-6g8"/>
                 <constraint firstItem="Q00-Ex-zPp" firstAttribute="centerY" secondItem="VOO-E1-HbO" secondAttribute="centerY" id="ET3-GV-2kR"/>
                 <constraint firstItem="VOO-E1-HbO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ExP-dD-IxE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kbl-pM-3db" secondAttribute="bottom" constant="8" id="Tqu-dB-JdG"/>
-                <constraint firstItem="VOO-E1-HbO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="btc-g9-9oH"/>
-                <constraint firstItem="kbl-pM-3db" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="p42-WI-DmJ"/>
+                <constraint firstAttribute="bottom" secondItem="kbl-pM-3db" secondAttribute="bottom" id="Tqu-dB-JdG"/>
+                <constraint firstItem="VOO-E1-HbO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="btc-g9-9oH"/>
+                <constraint firstItem="kbl-pM-3db" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p42-WI-DmJ"/>
                 <constraint firstItem="kbl-pM-3db" firstAttribute="top" secondItem="VOO-E1-HbO" secondAttribute="bottom" constant="8" id="sWl-Kt-QXs"/>
             </constraints>
             <point key="canvasLocation" x="132" y="132"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

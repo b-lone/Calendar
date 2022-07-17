@@ -36,6 +36,15 @@ enum Weekday: Int {
             return "Sat"
         }
     }
+    
+    var isWeekend: Bool {
+        switch self {
+        case .mon, .tue, .wed, .thur,. fri:
+            return false
+        case .sun, .sat:
+            return true
+        }
+    }
 }
 
 enum Month: Int {

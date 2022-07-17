@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var weekdayContainerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
     var monthViewControllerList = [MonthViewController]()
@@ -18,8 +19,20 @@ class ViewController: UIViewController {
     let createCountEveryTime = 6
     let removeThreshold = 12
     
+    let weekdayViewController: WeekdayViewController =  {
+        let viewController = WeekdayViewController()
+        return viewController
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addChild(weekdayViewController)
+        weekdayContainerView.addSubview(weekdayViewController.view)
+        weekdayViewController.view.topAnchor.constraint(equalTo: weekdayContainerView.topAnchor).isActive = true
+        weekdayViewController.view.bottomAnchor.constraint(equalTo: weekdayContainerView.bottomAnchor).isActive = true
+        weekdayViewController.view.leadingAnchor.constraint(equalTo: weekdayContainerView.leadingAnchor).isActive = true
+        weekdayViewController.view.trailingAnchor.constraint(equalTo: weekdayContainerView.trailingAnchor).isActive = true
         
         view.layoutIfNeeded()
         setupMonthViewControllerList()

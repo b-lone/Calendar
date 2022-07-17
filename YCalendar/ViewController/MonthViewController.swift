@@ -31,12 +31,14 @@ class MonthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .randomColor
+        view.backgroundColor = .clear
         
-        monthLabel.text = dataSource.month.abbreviation
+        monthLabel.text = "\(dataSource.month.abbreviation)."
+        monthLabel.textColor = .white
         yearLabel.text = "\(dataSource.year)"
+        yearLabel.textColor = .white
         
-        collectionView.backgroundColor = .clear
+        collectionView.backgroundColor = .black.withAlphaComponent(0.3)
         collectionView.register(UINib (nibName: cellReuseIdentifier, bundle: nil), forCellWithReuseIdentifier: cellReuseIdentifier)
     }
     

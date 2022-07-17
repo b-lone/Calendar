@@ -16,9 +16,7 @@ class MonthCollectionViewCell: UICollectionViewCell {
         
         dayLabel.isHidden = dayModel.isPlaceholder
         dayLabel.text = "\(dayModel.day)"
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+        
+        dayLabel.textColor = dayModel.weekday.isWeekend ? .systemCyan : .white
     }
 }

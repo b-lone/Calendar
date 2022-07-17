@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeekdayViewController" customModule="YCalendar" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Q0N-98-EZ4" id="frE-OR-Iac"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q0N-98-EZ4">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TiJ-0s-0Mr">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fro-bj-BSr"/>
+                        <outlet property="delegate" destination="-1" id="hNy-cP-8t0"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XBN-c5-hAa"/>
+            <constraints>
+                <constraint firstItem="Q0N-98-EZ4" firstAttribute="top" secondItem="XBN-c5-hAa" secondAttribute="top" id="Z3o-pK-c6u"/>
+                <constraint firstItem="XBN-c5-hAa" firstAttribute="bottom" secondItem="Q0N-98-EZ4" secondAttribute="bottom" id="hVb-oi-7aV"/>
+                <constraint firstItem="Q0N-98-EZ4" firstAttribute="leading" secondItem="XBN-c5-hAa" secondAttribute="leading" id="hdp-Jl-vtb"/>
+                <constraint firstItem="XBN-c5-hAa" firstAttribute="trailing" secondItem="Q0N-98-EZ4" secondAttribute="trailing" id="mm8-uZ-DHu"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="124"/>
+        </view>
+    </objects>
+</document>

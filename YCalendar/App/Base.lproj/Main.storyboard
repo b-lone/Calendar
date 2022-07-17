@@ -16,8 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="OGe-rn-C5W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3O-2o-4TJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A0t-0w-lTG"/>
+                                </constraints>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf1-nG-b5o">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="MLr-1w-Ga0"/>
                                 </connections>
@@ -26,14 +35,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OGe-rn-C5W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Yh-C6-AX2"/>
+                            <constraint firstAttribute="trailing" secondItem="OGe-rn-C5W" secondAttribute="trailing" id="9ee-02-uoT"/>
                             <constraint firstItem="Qf1-nG-b5o" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AjP-6I-1fD"/>
-                            <constraint firstItem="Qf1-nG-b5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tl6-0Q-Dnq"/>
+                            <constraint firstItem="F3O-2o-4TJ" firstAttribute="trailing" secondItem="Qf1-nG-b5o" secondAttribute="trailing" id="KmQ-k8-O8R"/>
+                            <constraint firstAttribute="bottom" secondItem="OGe-rn-C5W" secondAttribute="bottom" id="MG3-VY-kir"/>
+                            <constraint firstItem="OGe-rn-C5W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nxq-Bm-Jeh"/>
+                            <constraint firstItem="F3O-2o-4TJ" firstAttribute="leading" secondItem="Qf1-nG-b5o" secondAttribute="leading" id="OlN-u6-w9Q"/>
+                            <constraint firstItem="F3O-2o-4TJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T7r-Zq-LqD"/>
+                            <constraint firstItem="Qf1-nG-b5o" firstAttribute="top" secondItem="F3O-2o-4TJ" secondAttribute="bottom" id="Tl6-0Q-Dnq"/>
                             <constraint firstItem="Qf1-nG-b5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mi1-BZ-4VZ"/>
                             <constraint firstItem="Qf1-nG-b5o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="o6r-yb-pTX"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="Qf1-nG-b5o" id="bGf-z0-KBp"/>
+                        <outlet property="weekdayContainerView" destination="F3O-2o-4TJ" id="cch-Ve-Pci"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,6 +59,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="1080" height="1620"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

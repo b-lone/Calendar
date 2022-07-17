@@ -20,6 +20,8 @@
 		61A8959B2883B9B100BD2A91 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A895992883B9B100BD2A91 /* MonthCollectionViewCell.swift */; };
 		61A8959C2883B9B100BD2A91 /* MonthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A8959A2883B9B100BD2A91 /* MonthCollectionViewCell.xib */; };
 		61A8959E2884241900BD2A91 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8959D2884241900BD2A91 /* UIView+Extensions.swift */; };
+		61A895A62884602300BD2A91 /* WeekdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A895A42884602300BD2A91 /* WeekdayViewController.swift */; };
+		61A895A72884602300BD2A91 /* WeekdayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A895A52884602300BD2A91 /* WeekdayViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		61A895992883B9B100BD2A91 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A8959A2883B9B100BD2A91 /* MonthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthCollectionViewCell.xib; sourceTree = "<group>"; };
 		61A8959D2884241900BD2A91 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		61A895A42884602300BD2A91 /* WeekdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayViewController.swift; sourceTree = "<group>"; };
+		61A895A52884602300BD2A91 /* WeekdayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekdayViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				61A895932883A8AB00BD2A91 /* MonthViewController.swift */,
 				61A895942883A8AB00BD2A91 /* MonthViewController.xib */,
 				61A8957F2882E22E00BD2A91 /* ViewController.swift */,
+				61A895A42884602300BD2A91 /* WeekdayViewController.swift */,
+				61A895A52884602300BD2A91 /* WeekdayViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 				61A895852882E22F00BD2A91 /* Assets.xcassets in Resources */,
 				61A895832882E22E00BD2A91 /* Main.storyboard in Resources */,
 				61A8959C2883B9B100BD2A91 /* MonthCollectionViewCell.xib in Resources */,
+				61A895A72884602300BD2A91 /* WeekdayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +213,7 @@
 				61A895952883A8AB00BD2A91 /* MonthViewController.swift in Sources */,
 				61A895802882E22E00BD2A91 /* ViewController.swift in Sources */,
 				61A8957C2882E22E00BD2A91 /* AppDelegate.swift in Sources */,
+				61A895A62884602300BD2A91 /* WeekdayViewController.swift in Sources */,
 				61A8957E2882E22E00BD2A91 /* SceneDelegate.swift in Sources */,
 				61A8959E2884241900BD2A91 /* UIView+Extensions.swift in Sources */,
 				61A8959B2883B9B100BD2A91 /* MonthCollectionViewCell.swift in Sources */,
@@ -353,9 +361,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DGL9H84P44;
+				DEVELOPMENT_TEAM = JL47UZ4B53;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YCalendar/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -368,8 +377,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.youkun.YCalendar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youk.ycalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,9 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DGL9H84P44;
+				DEVELOPMENT_TEAM = JL47UZ4B53;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YCalendar/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -396,8 +407,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.youkun.YCalendar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youk.ycalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
