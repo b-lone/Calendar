@@ -70,22 +70,62 @@
 		61A8957A2882E22E00BD2A91 /* YCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				61A8957B2882E22E00BD2A91 /* AppDelegate.swift */,
-				61A8957D2882E22E00BD2A91 /* SceneDelegate.swift */,
-				61A8957F2882E22E00BD2A91 /* ViewController.swift */,
-				61A895812882E22E00BD2A91 /* Main.storyboard */,
-				61A895842882E22F00BD2A91 /* Assets.xcassets */,
-				61A895862882E22F00BD2A91 /* LaunchScreen.storyboard */,
-				61A895892882E22F00BD2A91 /* Info.plist */,
-				61A8958F2882E36400BD2A91 /* CanlendarModel.swift */,
-				61A895932883A8AB00BD2A91 /* MonthViewController.swift */,
-				61A895942883A8AB00BD2A91 /* MonthViewController.xib */,
-				61A895972883AE3D00BD2A91 /* UIColor+Extensions.swift */,
-				61A895992883B9B100BD2A91 /* MonthCollectionViewCell.swift */,
-				61A8959A2883B9B100BD2A91 /* MonthCollectionViewCell.xib */,
-				61A8959D2884241900BD2A91 /* UIView+Extensions.swift */,
+				61A8959F288445E100BD2A91 /* App */,
+				61A895A32884466200BD2A91 /* Model */,
+				61A895A12884461B00BD2A91 /* Resource */,
+				61A895A22884464A00BD2A91 /* Toolkit */,
+				61A895A0288445F300BD2A91 /* ViewController */,
 			);
 			path = YCalendar;
+			sourceTree = "<group>";
+		};
+		61A8959F288445E100BD2A91 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				61A8957B2882E22E00BD2A91 /* AppDelegate.swift */,
+				61A895892882E22F00BD2A91 /* Info.plist */,
+				61A895862882E22F00BD2A91 /* LaunchScreen.storyboard */,
+				61A895812882E22E00BD2A91 /* Main.storyboard */,
+				61A8957D2882E22E00BD2A91 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		61A895A0288445F300BD2A91 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61A895992883B9B100BD2A91 /* MonthCollectionViewCell.swift */,
+				61A8959A2883B9B100BD2A91 /* MonthCollectionViewCell.xib */,
+				61A895932883A8AB00BD2A91 /* MonthViewController.swift */,
+				61A895942883A8AB00BD2A91 /* MonthViewController.xib */,
+				61A8957F2882E22E00BD2A91 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		61A895A12884461B00BD2A91 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				61A895842882E22F00BD2A91 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		61A895A22884464A00BD2A91 /* Toolkit */ = {
+			isa = PBXGroup;
+			children = (
+				61A895972883AE3D00BD2A91 /* UIColor+Extensions.swift */,
+				61A8959D2884241900BD2A91 /* UIView+Extensions.swift */,
+			);
+			path = Toolkit;
+			sourceTree = "<group>";
+		};
+		61A895A32884466200BD2A91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61A8958F2882E36400BD2A91 /* CanlendarModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DGL9H84P44;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YCalendar/Info.plist;
+				INFOPLIST_FILE = YCalendar/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DGL9H84P44;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YCalendar/Info.plist;
+				INFOPLIST_FILE = YCalendar/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
