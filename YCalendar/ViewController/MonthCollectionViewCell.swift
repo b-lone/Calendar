@@ -17,6 +17,6 @@ class MonthCollectionViewCell: UICollectionViewCell {
         dayLabel.isHidden = dayModel.isPlaceholder
         dayLabel.text = "\(dayModel.day)"
         
-        dayLabel.textColor = dayModel.weekday.isWeekend ? .systemCyan : .white
+        dayLabel.textColor = dayModel.weekday.isWeekend ? .blue : .white
     }
 }

@@ -157,7 +157,7 @@ class AWeek: DayContainer {
     init(byAdding weekOffset: Int) {
         super.init()
         
-        let date = Date(timeInterval: ((TimeInterval)(weekOffset)) * 7 * 24 * 60 * 60, since: Date.now)
+        let date = Date(timeInterval: ((TimeInterval)(weekOffset)) * 7 * 24 * 60 * 60, since: Date())
         let weekday = Calendar.current.dateComponents([.weekday], from: date).weekday ?? 1
         for i in 0...6 {
             let aDate = Date(timeInterval: ((TimeInterval)(i + 1 - weekday)) * 24 * 60 * 60, since: date)
@@ -171,7 +171,7 @@ class AMonth: DayContainer {
     let year: Year
     
     init(byAdding monthOffset: Int) {
-        let currentDateComponents = Calendar.current.dateComponents([.month, .year], from: Date.now)
+        let currentDateComponents = Calendar.current.dateComponents([.month, .year], from: Date())
         let currentMonth = currentDateComponents.month ?? 1
         let currenYear = currentDateComponents.year ?? 0
         
@@ -199,7 +199,7 @@ class AMonth: DayContainer {
         
         let daysInMonth = getDays(in: Month(rawValue: newMonth) ?? .jan, of: newYear)
         for index in 0..<daysInMonth {
-            days.append(DayModel(date: Date(timeInterval: ((TimeInterval)(index)) * 24 * 60 * 60, since: newDate ?? Date.now)))
+            days.append(DayModel(date: Date(timeInterval: ((TimeInterval)(index)) * 24 * 60 * 60, since: newDate ?? Date())))
         }
     }
     
