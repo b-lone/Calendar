@@ -38,6 +38,13 @@ class WeekdayViewController: UIViewController {
     
     var dataSource = [Weekday]()
     private let cellReuseIdentifier = "WeekdayCollectionViewCell"
+    private var viewWidth: CGFloat = 0 {
+        didSet {
+            if oldValue != viewWidth {
+                collectionView.setCollectionViewLayout(UICollectionViewFlowLayout(), animated: false)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +53,11 @@ class WeekdayViewController: UIViewController {
         
         collectionView.backgroundColor = .clear
         collectionView.register(WeekdayCollectionViewCell.self, forCellWithReuseIdentifier: cellReuseIdentifier)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        viewWidth = view.width
     }
 }
 
@@ -70,7 +82,7 @@ extension WeekdayViewController: UICollectionViewDelegate {
 
 extension WeekdayViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.width / 7.0
+        let width = viewWidth / 7.0
         let height = 30.0
         return CGSize(width: width, height: height)
     }

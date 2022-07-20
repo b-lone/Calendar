@@ -39,6 +39,11 @@ class ViewController: UIViewController {
         initializeContentOffset()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        updateContentSize()
+    }
+    
     private func setupMonthViewControllerList() {
         let viewController = createMonthViewController(monthOffset: 0)
         monthViewControllerList.append(viewController)
@@ -177,7 +182,7 @@ class ViewController: UIViewController {
         monthViewControllerList.forEach { viewController in
             contentHeight += viewController.view.height
         }
-        scrollView.contentSize = CGSize(width: view.width, height: contentHeight)
+        scrollView.contentSize = CGSize(width: scrollView.width, height: contentHeight)
     }
 }
 

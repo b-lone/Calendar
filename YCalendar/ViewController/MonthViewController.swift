@@ -13,6 +13,14 @@ class MonthViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     private let cellReuseIdentifier = "MonthCollectionViewCell"
+    private var viewWidth: CGFloat = 0 {
+        didSet {
+            if oldValue != viewWidth {
+                collectionView.setCollectionViewLayout(UICollectionViewFlowLayout(), animated: false)
+            }
+        }
+    }
+    
     let dataSource: MonthDataSource
     
     init(byAdding monthOffset: Int) {
@@ -48,6 +56,11 @@ class MonthViewController: UIViewController {
         let collectionViewHeight = CGFloat((dataSource.days.count + 6) / 7) * cellHeight
         collectionView.heightAnchor.constraint(equalToConstant: collectionViewHeight).isActive = true
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        viewWidth = view.width
+    }
 }
 
 extension MonthViewController: UICollectionViewDataSource {
@@ -71,8 +84,8 @@ extension MonthViewController: UICollectionViewDelegate {
 
 extension MonthViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.width / 7.0
-        let height = width
+        let width = viewWidth / 7.0
+        let height = min(width, 50)
         return CGSize(width: width, height: height)
     }
     

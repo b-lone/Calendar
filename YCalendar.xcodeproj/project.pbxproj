@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2178809128854CA800BACCCB /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178809028854CA800BACCCB /* UICollectionView+Extensions.swift */; };
 		61A8957C2882E22E00BD2A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8957B2882E22E00BD2A91 /* AppDelegate.swift */; };
 		61A8957E2882E22E00BD2A91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8957D2882E22E00BD2A91 /* SceneDelegate.swift */; };
 		61A895802882E22E00BD2A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8957F2882E22E00BD2A91 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2178809028854CA800BACCCB /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		61760B692884DF16001938FA /* YCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YCalendar.entitlements; sourceTree = "<group>"; };
 		61A895782882E22E00BD2A91 /* YCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A8957B2882E22E00BD2A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				61A895972883AE3D00BD2A91 /* UIColor+Extensions.swift */,
 				61A8959D2884241900BD2A91 /* UIView+Extensions.swift */,
+				2178809028854CA800BACCCB /* UICollectionView+Extensions.swift */,
 			);
 			path = Toolkit;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				61A895902882E36400BD2A91 /* CanlendarModel.swift in Sources */,
 				61A895982883AE3D00BD2A91 /* UIColor+Extensions.swift in Sources */,
+				2178809128854CA800BACCCB /* UICollectionView+Extensions.swift in Sources */,
 				61A895952883A8AB00BD2A91 /* MonthViewController.swift in Sources */,
 				61A895802882E22E00BD2A91 /* ViewController.swift in Sources */,
 				61A8957C2882E22E00BD2A91 /* AppDelegate.swift in Sources */,
