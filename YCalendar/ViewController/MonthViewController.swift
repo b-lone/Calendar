@@ -78,7 +78,7 @@ extension MonthViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! MonthCollectionViewCell
-        cell.update(dataSource.days[indexPath.row])
+        cell.update(dataSource.days[indexPath.row], isFirstRow: indexPath.row < 7)
         return cell
     }
 }

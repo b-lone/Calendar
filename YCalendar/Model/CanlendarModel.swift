@@ -94,9 +94,6 @@ enum Month: Int {
 typealias Year = Int
 
 class DayModel: NSObject {
-    class var placeholder: DayModel {
-        return DayModel()
-    }
     var isPlaceholder: Bool
     
     private var date: Date?
@@ -104,6 +101,15 @@ class DayModel: NSObject {
     var weekday: Weekday
     var month: Month
     var year: Year
+    
+    
+    class var placeholder: DayModel {
+        return DayModel()
+    }
+    var isToday: Bool {
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
+        return dateComponents.day == day && dateComponents.month == month.rawValue && dateComponents.year == year
+    }
     
     private override init() {
         isPlaceholder = true
