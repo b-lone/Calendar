@@ -59,7 +59,6 @@ class ViewController: UIViewController {
         scrollView.addSubview(viewController.view)
         viewController.view.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
         viewController.view.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        viewController.update()
         
         return viewController
     }

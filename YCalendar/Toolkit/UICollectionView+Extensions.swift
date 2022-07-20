@@ -8,4 +8,10 @@
 import UIKit
 
 extension UICollectionView {
+    func reloadLayout() {
+        let layout = collectionViewLayout
+        setCollectionViewLayout(UICollectionViewFlowLayout(), animated: false)
+        layoutSubviews()
+        setCollectionViewLayout(layout, animated: false)
+    }
 }

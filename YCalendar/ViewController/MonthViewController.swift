@@ -16,11 +16,16 @@ class MonthViewController: UIViewController {
     private var viewWidth: CGFloat = 0 {
         didSet {
             if oldValue != viewWidth {
-                collectionView.setCollectionViewLayout(UICollectionViewFlowLayout(), animated: false)
+                collectionView.reloadLayout()
+                updateCollectionViewHeightConstraint()
             }
         }
     }
-    
+    lazy var collectionViewHeightConstraint: NSLayoutConstraint = {
+        let constraint = collectionView.heightAnchor.constraint(equalToConstant: 0)
+        constraint.isActive = true
+        return constraint
+    }()
     let dataSource: MonthDataSource
     
     init(byAdding monthOffset: Int) {
@@ -50,11 +55,10 @@ class MonthViewController: UIViewController {
         collectionView.register(UINib (nibName: cellReuseIdentifier, bundle: nil), forCellWithReuseIdentifier: cellReuseIdentifier)
     }
     
-    func update() {
-        view.layoutIfNeeded()
-        let cellHeight = view.width / 7.0
+    private func updateCollectionViewHeightConstraint() {
+        let cellHeight = min(viewWidth / 7.0, 50)
         let collectionViewHeight = CGFloat((dataSource.days.count + 6) / 7) * cellHeight
-        collectionView.heightAnchor.constraint(equalToConstant: collectionViewHeight).isActive = true
+        collectionViewHeightConstraint.constant = collectionViewHeight
     }
     
     override func viewDidLayoutSubviews() {

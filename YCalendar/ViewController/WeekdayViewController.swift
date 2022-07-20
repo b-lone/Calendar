@@ -41,7 +41,7 @@ class WeekdayViewController: UIViewController {
     private var viewWidth: CGFloat = 0 {
         didSet {
             if oldValue != viewWidth {
-                collectionView.setCollectionViewLayout(UICollectionViewFlowLayout(), animated: false)
+                collectionView.reloadLayout()
             }
         }
     }
