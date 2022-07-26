@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2178809128854CA800BACCCB /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2178809028854CA800BACCCB /* UICollectionView+Extensions.swift */; };
+		21210FF228901CD10014E490 /* DateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21210FF128901CD00014E490 /* DateComponents.swift */; };
+		21210FF428901DED0014E490 /* ADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21210FF328901DED0014E490 /* ADay.swift */; };
+		21210FF6289035A60014E490 /* AMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21210FF5289035A60014E490 /* AMonth.swift */; };
 		61A8957C2882E22E00BD2A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8957B2882E22E00BD2A91 /* AppDelegate.swift */; };
 		61A8957E2882E22E00BD2A91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8957D2882E22E00BD2A91 /* SceneDelegate.swift */; };
 		61A895802882E22E00BD2A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8957F2882E22E00BD2A91 /* ViewController.swift */; };
 		61A895832882E22E00BD2A91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A895812882E22E00BD2A91 /* Main.storyboard */; };
 		61A895852882E22F00BD2A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A895842882E22F00BD2A91 /* Assets.xcassets */; };
 		61A895882882E22F00BD2A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A895862882E22F00BD2A91 /* LaunchScreen.storyboard */; };
-		61A895902882E36400BD2A91 /* CanlendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8958F2882E36400BD2A91 /* CanlendarModel.swift */; };
 		61A895952883A8AB00BD2A91 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A895932883A8AB00BD2A91 /* MonthViewController.swift */; };
 		61A895962883A8AB00BD2A91 /* MonthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A895942883A8AB00BD2A91 /* MonthViewController.xib */; };
-		61A895982883AE3D00BD2A91 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A895972883AE3D00BD2A91 /* UIColor+Extensions.swift */; };
 		61A8959B2883B9B100BD2A91 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A895992883B9B100BD2A91 /* MonthCollectionViewCell.swift */; };
 		61A8959C2883B9B100BD2A91 /* MonthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A8959A2883B9B100BD2A91 /* MonthCollectionViewCell.xib */; };
-		61A8959E2884241900BD2A91 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8959D2884241900BD2A91 /* UIView+Extensions.swift */; };
 		61A895A62884602300BD2A91 /* WeekdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A895A42884602300BD2A91 /* WeekdayViewController.swift */; };
 		61A895A72884602300BD2A91 /* WeekdayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A895A52884602300BD2A91 /* WeekdayViewController.xib */; };
 		D7C19DCE8E8872D9BB111A3C /* Pods_YCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE672C391725531BBF455E41 /* Pods_YCalendar.framework */; };
@@ -28,7 +27,9 @@
 
 /* Begin PBXFileReference section */
 		09622AC3FDCE3DEB69114C0E /* Pods-YCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCalendar.release.xcconfig"; path = "Target Support Files/Pods-YCalendar/Pods-YCalendar.release.xcconfig"; sourceTree = "<group>"; };
-		2178809028854CA800BACCCB /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		21210FF128901CD00014E490 /* DateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponents.swift; sourceTree = "<group>"; };
+		21210FF328901DED0014E490 /* ADay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADay.swift; sourceTree = "<group>"; };
+		21210FF5289035A60014E490 /* AMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMonth.swift; sourceTree = "<group>"; };
 		61760B692884DF16001938FA /* YCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YCalendar.entitlements; sourceTree = "<group>"; };
 		61A895782882E22E00BD2A91 /* YCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A8957B2882E22E00BD2A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,13 +39,10 @@
 		61A895842882E22F00BD2A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61A895872882E22F00BD2A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61A895892882E22F00BD2A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61A8958F2882E36400BD2A91 /* CanlendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanlendarModel.swift; sourceTree = "<group>"; };
 		61A895932883A8AB00BD2A91 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
 		61A895942883A8AB00BD2A91 /* MonthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthViewController.xib; sourceTree = "<group>"; };
-		61A895972883AE3D00BD2A91 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		61A895992883B9B100BD2A91 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A8959A2883B9B100BD2A91 /* MonthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthCollectionViewCell.xib; sourceTree = "<group>"; };
-		61A8959D2884241900BD2A91 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		61A895A42884602300BD2A91 /* WeekdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayViewController.swift; sourceTree = "<group>"; };
 		61A895A52884602300BD2A91 /* WeekdayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekdayViewController.xib; sourceTree = "<group>"; };
 		8B70D0EB55ED2DAED3DBC270 /* Pods-YCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCalendar.debug.xcconfig"; path = "Target Support Files/Pods-YCalendar/Pods-YCalendar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				61A8959F288445E100BD2A91 /* App */,
 				61A895A32884466200BD2A91 /* Model */,
 				61A895A12884461B00BD2A91 /* Resource */,
-				61A895A22884464A00BD2A91 /* Toolkit */,
 				61A895A0288445F300BD2A91 /* ViewController */,
 			);
 			path = YCalendar;
@@ -136,20 +133,12 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		61A895A22884464A00BD2A91 /* Toolkit */ = {
-			isa = PBXGroup;
-			children = (
-				61A895972883AE3D00BD2A91 /* UIColor+Extensions.swift */,
-				61A8959D2884241900BD2A91 /* UIView+Extensions.swift */,
-				2178809028854CA800BACCCB /* UICollectionView+Extensions.swift */,
-			);
-			path = Toolkit;
-			sourceTree = "<group>";
-		};
 		61A895A32884466200BD2A91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				61A8958F2882E36400BD2A91 /* CanlendarModel.swift */,
+				21210FF128901CD00014E490 /* DateComponents.swift */,
+				21210FF328901DED0014E490 /* ADay.swift */,
+				21210FF5289035A60014E490 /* AMonth.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,15 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61A895902882E36400BD2A91 /* CanlendarModel.swift in Sources */,
-				61A895982883AE3D00BD2A91 /* UIColor+Extensions.swift in Sources */,
-				2178809128854CA800BACCCB /* UICollectionView+Extensions.swift in Sources */,
 				61A895952883A8AB00BD2A91 /* MonthViewController.swift in Sources */,
+				21210FF6289035A60014E490 /* AMonth.swift in Sources */,
+				21210FF428901DED0014E490 /* ADay.swift in Sources */,
 				61A895802882E22E00BD2A91 /* ViewController.swift in Sources */,
 				61A8957C2882E22E00BD2A91 /* AppDelegate.swift in Sources */,
 				61A895A62884602300BD2A91 /* WeekdayViewController.swift in Sources */,
 				61A8957E2882E22E00BD2A91 /* SceneDelegate.swift in Sources */,
-				61A8959E2884241900BD2A91 /* UIView+Extensions.swift in Sources */,
+				21210FF228901CD10014E490 /* DateComponents.swift in Sources */,
 				61A8959B2883B9B100BD2A91 /* MonthCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,18 +11,22 @@ class MonthCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var gridLine: UIView!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var todayFlagView: UIView!
-    private var dayModel: DayModel?
+    private var aDay: ADay?
     
-    func update(_ dayModel: DayModel, isFirstRow: Bool) {
-        self.dayModel = dayModel
+    func update(_ aDay: ADay, isFirstRow: Bool) {
+        self.aDay = aDay
         
-        gridLine.isHidden = dayModel.isPlaceholder || isFirstRow
+        gridLine.isHidden = !aDay.isValid || isFirstRow
         
-        dayLabel.isHidden = dayModel.isPlaceholder
-        dayLabel.text = "\(dayModel.day)"
+        dayLabel.isHidden = !aDay.isValid
+        if let day = aDay.day {
+            dayLabel.text = "\(day)"
+        } else {
+            dayLabel.text = "-"
+        }
         
-        dayLabel.textColor = dayModel.weekday.isWeekend ? .blue : .white
-        todayFlagView.isHidden = !dayModel.isToday
+        dayLabel.textColor = aDay.weekday?.isWeekend == true ? .blue : .white
+        todayFlagView.isHidden = !aDay.isToday
     }
     
     override func awakeFromNib() {

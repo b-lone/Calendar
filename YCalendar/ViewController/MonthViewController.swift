@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import iOS_Kit
 
 class MonthViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
@@ -26,10 +27,10 @@ class MonthViewController: UIViewController {
         constraint.isActive = true
         return constraint
     }()
-    let dataSource: MonthDataSource
+    let dataSource: AMonth
     
     init(byAdding monthOffset: Int) {
-        self.dataSource = MonthDataSource(byAdding: monthOffset)
+        self.dataSource = AMonth(byAdding: monthOffset)
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -73,12 +74,12 @@ extension MonthViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.days.count
+        return dataSource.getDaysWithPlaceholder().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! MonthCollectionViewCell
-        cell.update(dataSource.days[indexPath.row], isFirstRow: indexPath.row < 7)
+        cell.update(dataSource.getDaysWithPlaceholder()[indexPath.row], isFirstRow: indexPath.row < 7)
         return cell
     }
 }
