@@ -7,7 +7,7 @@ target 'YCalendar' do
   
   pod 'AFNetworking', '~> 4.0'
   pod 'iOS_Kit'
-  pod 'ReactiveCocoa', '~> 10.1'
+  pod 'RxSwift'
   pod 'YYModel'
   
 end
