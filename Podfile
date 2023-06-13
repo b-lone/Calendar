@@ -8,6 +8,6 @@ target 'YCalendar' do
   pod 'AFNetworking', '~> 4.0'
   pod 'iOS_Kit'
   pod 'RxSwift'
-  pod 'YYModel'
+#  pod 'YYModel'
   
 end
